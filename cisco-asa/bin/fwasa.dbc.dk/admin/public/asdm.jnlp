@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+" codebase="https://fwasa.dbc.dk/admin/public" href="https://fwasa.dbc.dk/admin/public/asdm.jnlp">
+  <information>
+    <title>ASDM on fwasa.dbc.dk</title>
+    <vendor>Cisco Systems, Inc.</vendor>
+    <homepage href="http://www.cisco.com/go/asdm"/>
+    <description>ASDM on fwasa.dbc.dk</description>
+    <description kind="short">ASDM on fwasa.dbc.dk</description>
+    <description kind="tooltip">ASDM on fwasa.dbc.dk</description>
+    <icon href="asdm32.gif"/>
+    <offline-allowed/>
+    <shortcut>
+      <desktop/>
+      <menu submenu="Cisco ASDM"/>
+    </shortcut>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Xms64m -Xmx512m"/>
+    <jar href="dm-launcher.jar" main="true" download="eager"/>
+    <jar href="lzma.jar" download="eager"/>
+    <jar href="jploader.jar" download="eager"/>
+    <jar href="retroweaver-rt-2.0.jar" download="eager"/>
+    <property name="java.util.Arrays.useLegacyMergeSort" value="true"/>
+    <property name="http.agent" value="ASDM/"/>
+  </resources>
+
+  <application-desc main-class="com.cisco.launcher.Launcher">
+      <argument>/webstart</argument>
+      <argument>fwasa.dbc.dk</argument>
+  </application-desc>
+
+</jnlp>

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#  ${ASDMLIB}lzma.jar:${ASDMLIB}jploader.jar:${ASDMLIB}asdm-launcher.jar:${ASDMLIB}retroweaver-rt-2.0.jar \
+
+java -Xms64m -Xmx512m -XX:MaxNewSize=1024k \
+ -Dsun.swing.enableImprovedDragGesure=true \
+ -Dapple.laf.useScreenMenuBar=true \
+ -Dapple.awt.graphics.UseQuartz=true \
+ --class-path \
+  bin/fwasa.dbc.dk/admin/public/lzma.jar:bin/fwasa.dbc.dk/admin/public/jploader.jar:bin/fwasa.dbc.dk/admin/public/dm-launcher.jar:bin/fwasa.dbc.dk/admin/public/asdm.jnlp:bin/fwasa.dbc.dk/admin/public/retroweaver-rt-2.0.jar \
+ com.cisco.launcher.Launcher
+
+
+
+# bin/fwasa.dbc.dk/admin/public/retroweaver-rt-2.0.jar.info
+# bin/fwasa.dbc.dk/admin/public/asdm32.gif.info
+# bin/fwasa.dbc.dk/admin/public/asdm.jnlp.info
+# bin/fwasa.dbc.dk/admin/public/asdm32.gif
+# bin/fwasa.dbc.dk/admin/public/lzma.jar.info
+# bin/fwasa.dbc.dk/admin/public/dm-launcher.jar.info
+# bin/fwasa.dbc.dk/admin/public/jploader.jar.info
